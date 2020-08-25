@@ -1,7 +1,10 @@
 body {
     color: navajowhite;
     background-image: url("../image/bg3.jpg");
-    background-color: #b6ff00;
+    
     background-size: cover;
+    background-position: center;
+    background-blend-mode:overlay;
+    min-height:100hv;
 
 }
