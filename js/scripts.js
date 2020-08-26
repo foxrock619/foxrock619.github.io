@@ -6,3 +6,4 @@ function curDate() {
     var daym = mydate.getDate();
     var dayarray = new Array()
 }
+

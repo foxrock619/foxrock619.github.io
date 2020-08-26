@@ -14,48 +14,85 @@
             color: floralwhite;
             font-family: STXihei;
         }
+        .slide-container {
+            position:relative;
+
+        }
+        .slide img {
+           width:100%;
+           height:600xp;
+           
+        }
     </style>
 </head>
 <body>
     <h2>我和小鹿的</h2>
     <br>
-    <p>
-        宝贝,七夕快乐，我爱你。
-        让这个网站记录咱们的爱情和咱们感情一起成长
+    <br>
+    让这个网站记录咱们的爱情和咱们感情一起成长
+    <br>
+    <br><br>
+        今天是8/26/2020，今天增加了手动转换图片的功能
+    <br><br>
+    <b><dd>草在结它的种子，风在摇晃它的叶子</dd>
+    <br>
+    <dd>我们站着不说话，就十分美好。</dd>
+    <br>
+    <dd>--顾城</dd></b>
 
-    </p>
-    <dl>
-        <dt>我爱你宝贝</dt>
-        <dd>这个网站还只是个雏形，我对于写网页完全是个新手，还有很多要学，很多地方要增加功能和完善。</dd>
-        <dd>它也代表了我对你的爱，虽然炽烈但是还有很多不足。我在完善这个网站的同时也会完善我对你的爱。</dd>
-        <dd>人生一路至此，遇到你是我最大的惊喜。</dd>
-        <dd>每天对你说永远不只是说说而已，我对咱们的爱抱有永恒的执着。</dd>
-        <dd>今天也好想你，但是克制住了认真的一直在写网页。</dd>
-        <dd>宝贝我对生活充满劲头，也能为你遮风避雨，今天是向你证明的我的承诺的开始</dd>
-        <dd>我之前的承诺也不会一遍一遍的提了，让我用行动证明</dd>
 
-    </dl>
-    <audio controls autoplay>
-        <source src="music.mp3" type="audio/mp3" />
+
+
+
+    <dd>..</dd>
+    <dt>我爱你宝贝</dt>
+    <dd>这个网站还只是个雏形，我对于写网页完全是个新手，还有很多要学，很多地方要增加功能和完善。</dd>
+    <dd>它也代表了我对你的爱，虽然炽烈但是还有很多不足。我在完善这个网站的同时也会完善我对你的爱。</dd>
+    <dd>人生一路至此，遇到你是我最大的惊喜。</dd>
+    <dd>每天对你说永远不只是说说而已，我对咱们的爱抱有永恒的执着。</dd>
+    <dd>今天也好想你，但是克制住了认真的一直在写网页。</dd>
+    <dd>宝贝我对生活充满劲头，也能为你遮风避雨，今天是向你证明的我的承诺的开始</dd>
+    <dd>我之前的承诺也不会一遍一遍的提了，让我用行动证明</dd>
+
+
+    <audio  autoplay loop>
+        <source src="music.mp3" type="audio/mp3" >
     </audio>
-    <div class="slide-frame">
-        <div class="slide-images">
-            <div class="img-container"
-            <img src=" = "image/br.jpg">
-            </div>
-            <div class="img-container"
-            <img src=" = "image/br2.jpg">
-            </div>
-            <div class="img-container"
-            <img src=" = "image/br3.jpg">
-            </div>
-        </div>
-    </div>
 
-    <div class="wrapper">
-        <img class="img1" src="image/his1.jpg" alt="">
-        <img class="img2" src="image/his2.jpg" alt="">
-    </div>
+
+
+
+    <img class="mySlides" src="image/his1.jpg">
+    <img class="mySlides" src="image/his2.jpg">
+
+
+    <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length };
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+    </script>
+
+
+
+
+
+
 
 
 
