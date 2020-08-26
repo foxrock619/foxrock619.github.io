@@ -32,13 +32,15 @@
     让这个网站记录咱们的爱情和咱们感情一起成长
     <br>
     <br><br>
-        今天是8/26/2020，今天增加了手动转换图片的功能
+    今天是8/26/2020，今天增加了自动转换图片的功能
     <br><br>
-    <b><dd>草在结它的种子，风在摇晃它的叶子</dd>
-    <br>
-    <dd>我们站着不说话，就十分美好。</dd>
-    <br>
-    <dd>--顾城</dd></b>
+    <b>
+        <dd>草在结它的种子，风在摇晃它的叶子</dd>
+        <br>
+        <dd>我们站着不说话，就十分美好。</dd>
+        <br>
+        <dd>--顾城</dd>
+    </b>
 
 
 
@@ -55,8 +57,8 @@
     <dd>我之前的承诺也不会一遍一遍的提了，让我用行动证明</dd>
 
 
-    <audio  autoplay loop>
-        <source src="music.mp3" type="audio/mp3" >
+    <audio autoplay loop>
+        <source src="music.mp3" type="audio/mp3">
     </audio>
 
 
@@ -66,27 +68,27 @@
     <img class="mySlides" src="image/his2.jpg">
 
 
-    <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-    <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
-    <script>
-        var slideIndex = 1;
-        showDivs(slideIndex);
+  
 
-        function plusDivs(n) {
-            showDivs(slideIndex += n);
-        }
+    <div>
+        <script>
+            var slideIndex = 0;
+            slideShow();
 
-        function showDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            if (n > x.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = x.length };
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
+            function slideShow() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > x.length) { slideIndex = 1 }
+                x[slideIndex - 1].style.display = "block";
+                setTimeout(slideShow, 3000); // Change image every 2 seconds
             }
-            x[slideIndex - 1].style.display = "block";
-        }
-    </script>
+
+        </script>
+    </div>
 
 
 
@@ -96,5 +98,5 @@
 
 
 
-</body>
-</html>
+</body >
+</html >
