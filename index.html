@@ -28,19 +28,54 @@
 <body>
     <h2>我和小鹿的</h2>
     <br>
+       <p id="demo"></p>
+
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("May 27, 2020 22:37:00").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function () {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = now - countDownDate;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the element with id="demo"
+            document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                + minutes + "m " + seconds + "s ";
+
+            // If the count down is finished, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+
     <br>
     让这个网站记录咱们的爱情和咱们感情一起成长
     <br>
     <br><br>
-    今天是8/26/2020，今天增加了自动转换图片的功能
+    今天是8/27/2020，今天增加了记录咱们相识时间的功能，我要让它延续到永远。
     <br><br>
-    <b>
-        <dd>草在结它的种子，风在摇晃它的叶子</dd>
-        <br>
-        <dd>我们站着不说话，就十分美好。</dd>
-        <br>
-        <dd>--顾城</dd>
-    </b>
+        <b>
+            <dd>我半生穿过枫叶 抖落白雪</dd>
+            <br>
+            <dd>就为奔向你面前</dd>
+            <br>
+            <dd>由你在我手心 塞一片春天</dd>
+            <br>
+            <dd>--姚若龙</dd>
+        </b>
 
 
 
@@ -85,14 +120,13 @@
                 slideIndex++;
                 if (slideIndex > x.length) { slideIndex = 1 }
                 x[slideIndex - 1].style.display = "block";
-                setTimeout(slideShow, 4000); // Change image every 2 seconds
+                setTimeout(slideShow, 4000); // Change image every 4 seconds
             }
 
         </script>
     </div>
 
-
-
+ 
 
 
 
