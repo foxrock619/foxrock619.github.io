@@ -1,6 +1,6 @@
 body {
     color: floralwhite;
-    background-image: url("../image/bg2.jpg");
+    background-image: url("../image/bg.jpg");
     
     background-size: cover;
     background-position: center;
@@ -27,7 +27,7 @@ p {
 .mySlides {
     border-radius: 30px;
     
-    height: 500px;
+    height: 300px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0px;
