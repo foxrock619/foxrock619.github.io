@@ -64,7 +64,7 @@ p {
 }
 
 .c1 {
-    position: relative;
+    position: center;
     display: inline;
 }
 
@@ -88,7 +88,9 @@ p {
     animation-name: fade;
     animation-duration: 1.5s;
 }
-
+.comment {
+    text-align: center;
+}
 .mbnt {
     display: inline-block;
     border-radius: 4px;
@@ -99,11 +101,23 @@ p {
     font-size: 28px;
     padding: 20px;
     width: 200px;
-    transition: all 0.5s;
     cursor: pointer;
-    margin: 5px;
+    margin-left: 500px;
+    margin-top: 100px;
 }
-
+input {
+    width: 375px;
+    height: 25px;
+}
+#com {
+    width: 375px;
+    height: 200px;
+}
+.combnt {
+    width: 80px;
+    height: 25px;
+    margin-left: 50px;
+}
 @-webkit-keyframes fade {
     from {
         opacity: .4
@@ -113,7 +127,9 @@ p {
         opacity: 1
     }
 }
-
+.combnt {
+    
+}
 @keyframes fade {
     from {
         opacity: .4
