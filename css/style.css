@@ -31,10 +31,7 @@ p {
     position: relative;
 }
 
-.slide img {
-    width: 100%;
-    height: 600xp;
-}
+
 .timer {
     font-size: 65px;
     text-transform: uppercase;
@@ -44,28 +41,24 @@ p {
     height: auto;
     text-align: center;
     color: white;
-    animation: neon 2s infinite;
+    animation: neon 2s infinite, op 5s;
+   
 }
 @keyframes neon {
     0% {
-        text-shadow: -1px -1px 1px var(--shadow-color-light), -1px 1px 1px var(--shadow-color-light), 1px -1px 1px var(--shadow-color-light), 1px 1px 1px var(--shadow-color-light), 0 0 3px var(--shadow-color-light), 0 0 10px var(--shadow-color-light), 0 0 20px var(--shadow-color-light), 0 0 30px var(--shadow-color), 0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color), 0 0 70px var(--shadow-color), 0 0 100px var(--shadow-color), 0 0 200px var(--shadow-color);
+        text-shadow: -2px -2px 2px var(--shadow-color-light), -2px 2px 2px var(--shadow-color-light), 2px -2px 2px var(--shadow-color-light), 2px 2px 2px var(--shadow-color-light), 0 0 10px var(--shadow-color-light), 0 0 10px var(--shadow-color-light), 0 0 20px var(--shadow-color-light), 0 0 30px var(--shadow-color), 0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color), 0 0 70px var(--shadow-color), 0 0 100px var(--shadow-color), 0 0 200px var(--shadow-color);
     }
 
     50% {
-        text-shadow: -1px -1px 1px var(--shadow-color-light), -1px 1px 1px var(--shadow-color-light), 1px -1px 1px var(--shadow-color-light), 1px 1px 1px var(--shadow-color-light), 0 0 5px var(--shadow-color-light), 0 0 15px var(--shadow-color-light), 0 0 25px var(--shadow-color-light), 0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color), 0 0 60px var(--shadow-color), 0 0 80px var(--shadow-color), 0 0 110px var(--shadow-color), 0 0 210px var(--shadow-color);
+        text-shadow: -2px -2px 2px var(--shadow-color-light), -2px 2px 2px var(--shadow-color-light), 2px -2px 2px var(--shadow-color-light), 2px 2px 2px var(--shadow-color-light), 0 0 10px var(--shadow-color-light), 0 0 15px var(--shadow-color-light), 0 0 25px var(--shadow-color-light), 0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color), 0 0 60px var(--shadow-color), 0 0 80px var(--shadow-color), 0 0 110px var(--shadow-color), 0 0 210px var(--shadow-color);
     }
 
     100% {
-        text-shadow: -1px -1px 1px var(--shadow-color-light), -1px 1px 1px var(--shadow-color-light), 1px -1px 1px var(--shadow-color-light), 1px 1px 1px var(--shadow-color-light), 0 0 3px var(--shadow-color-light), 0 0 10px var(--shadow-color-light), 0 0 20px var(--shadow-color-light), 0 0 30px var(--shadow-color), 0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color), 0 0 70px var(--shadow-color), 0 0 100px var(--shadow-color), 0 0 200px var(--shadow-color);
+        text-shadow: -2px -2px 2px var(--shadow-color-light), -2px 2px 2px var(--shadow-color-light), 2px -2px 2px var(--shadow-color-light), 2px 2px 2px var(--shadow-color-light), 0 0 10px var(--shadow-color-light), 0 0 10px var(--shadow-color-light), 0 0 20px var(--shadow-color-light), 0 0 30px var(--shadow-color), 0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color), 0 0 70px var(--shadow-color), 0 0 100px var(--shadow-color), 0 0 200px var(--shadow-color);
     }
 }
 
-.slide-frame{
-    overflow:hidden;
-    height:800px;
-    margin-left:360px;
-    margin-top: 20px;
-}
+
 p {
     display: inline;
 }
@@ -77,25 +70,16 @@ p {
 
 .mySlides {
     border-radius: 30px;
-    
     height: 300px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0px;
+    
+}
+.slideShow {
+    animation: op 5s;
 }
 
-
-.img1 {
-    width: 500px;
-    position:absolute;
-    top:100px;
-}
-.img2 {
-    width: 500px;
-    position: absolute;
-    top: 100px;
-    left:600px;
-}
 
 /* Fading animation */
 .fade {
@@ -103,6 +87,21 @@ p {
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s;
+}
+
+.mbnt {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: palevioletred;
+    border: none;
+    color: lightpink;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
 }
 
 @-webkit-keyframes fade {
@@ -122,5 +121,17 @@ p {
 
     to {
         opacity: 1
+    }
+}
+
+@keyframes op {
+    0% {
+        transform: translateX(500px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
     }
 }

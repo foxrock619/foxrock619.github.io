@@ -14,14 +14,17 @@
     </style>
 </head>
 <body>
+
     <div class="timer" id="demo"></div>
     <br><br><br>
     <img class="mySlides fade" src="image/his1.jpg">
     <img class="mySlides fade" src="image/his2.jpg">
     <img class="mySlides fade" src="image/his3.jpg">
     <br>
-
-
+    <audio id="music" src="music2.mp3" loop></audio>
+    <button class ="mbnt" onclick="document.getElementById('music').play()">爱你</button>
+    
+    <br>
     <script>
         // Set the date we're counting down to
         var countDownDate = new Date("May 27, 2020 9:37:00").getTime();
@@ -54,23 +57,36 @@
         <b> 让这个网站记录咱们的爱情和咱们感情一起成长</b>
 
         <br>
+        <br><br>
+        <br><br>
+        今天是8/30/2020，今天给计时器向左的效果，还加入了一个按键播放音乐。
+        <br><br>
+        <b>
+            <dd>如果有来生</dd>
+            <br>
+            <dd>希望每次的相逢，</dd>
+            <br>
+            <dd>都能化为永恒。</dd>
+            <br>
+            <dd>三毛《说给自己听》</dd>
+        </b>
 
         <br><br>
         <br><br>
         今天是8/29/2020，今天给计时器增加了一些效果，让它更能展现咱们的爱。
         <br><br>
-            <b>
-                <dd>你所希望我的，规劝我的话</dd>
-                <br>
-                <dd>我以后一定牢牢记着，</dd>
-                <br>
-                <dd>假使我将来若有一点成就的时候，</dd>
-                <br>
-                <dd>那么我这一点成就的荣耀，愿意全部归赠给你。</dd>
-                <br>
+        <b>
+            <dd>你所希望我的，规劝我的话</dd>
+            <br>
+            <dd>我以后一定牢牢记着，</dd>
+            <br>
+            <dd>假使我将来若有一点成就的时候，</dd>
+            <br>
+            <dd>那么我这一点成就的荣耀，愿意全部归赠给你。</dd>
+            <br>
 
-                <dd>——郁达夫</dd>
-            </b>
+            <dd>——郁达夫</dd>
+        </b>
         <br><br>
         今天是8/28/2020，今天简单调整了布局，让图片的高度固定，本来还想更新更多但是遇到了些问题，我爱你宝贝。
         <br><br>
@@ -108,7 +124,7 @@
             <dd>--顾城</dd>
         </b>
 
-        </b>
+        </br>
 
     </div>
     <br>
@@ -126,16 +142,12 @@
 
 
 
-    <audio autoplay loop>
-        <source src="music2.mp3" type="audio/mp3">
-        <source src="music.mp3" type="audio/mp3">
-    </audio>
 
 
 
 
 
-    <div>
+    <div class="slideShow">
         <script>
             var slideIndex = 0;
             slideShow();

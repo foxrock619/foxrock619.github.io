@@ -6,4 +6,9 @@ function curDate() {
     var daym = mydate.getDate();
     var dayarray = new Array()
 }
-
+function PlaySound(melody) {
+    alert("On Press of " + melody);
+    var path = "../music2.mp3"
+    var snd = new Audio(path + melody + ".mp3");
+    snd.play();
+}
