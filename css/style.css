@@ -12,7 +12,7 @@
 }
 body {
     color: floralwhite;
-    background-image: url("../image/bg4.jpg");
+    background-image: url("../image/bg5.jpg");
     
     background-size: cover;
     background-position: center;
@@ -31,7 +31,53 @@ p {
     position: relative;
 }
 
+.popout {
 
+    font-family: Futura, sans-serif;
+    font-weight: 900;
+    font-size: 80px;
+    padding: 80px;
+
+    @keyframes ani {
+        0% {
+            transform: translate3d(0,0,0);
+            text-shadow: 0em 0em 0 lightblue;
+            color: black;
+        }
+
+        30% {
+            transform: translate3d(0,0,0);
+            text-shadow: 0em 0em 0 lightblue;
+            color: black;
+        }
+
+        70% {
+            transform: translate3d(0.08em,-0.08em,0);
+            text-shadow: -0.08em 0.08em lightblue;
+            color: black;
+        }
+
+        100% {
+            transform: translate3d(0.08em,-0.08em,0);
+            text-shadow: -0.08em 0.08em lightblue;
+            color: black;
+        }
+    }
+
+    span
+{
+    position: relative;
+    display: inline-block;
+    animation: ani 1s infinite alternate cubic-bezier(0.860, 0.000, 0.070, 1.000);
+
+    @for $i from 1 through 3 {
+        &:nth-last-child(#{$i}n) {
+            animation-delay: -1s*$i/3/2;
+        }
+    }
+}
+	
+}
 .timer {
     font-size: 65px;
     text-transform: uppercase;
@@ -65,7 +111,8 @@ p {
 
 .c1 {
     position: center;
-    display: inline;
+    text-align: center;
+    animation: opy 5s;
 }
 
 .mySlides {
@@ -90,9 +137,10 @@ p {
 }
 .comment {
     text-align: center;
+    animation: op 5s;
 }
 .mbnt {
-    display: inline-block;
+    
     border-radius: 4px;
     background-color: palevioletred;
     border: none;
@@ -102,8 +150,9 @@ p {
     padding: 20px;
     width: 200px;
     cursor: pointer;
-    margin-left: 500px;
-    margin-top: 100px;
+    position: absolute;
+    animation: op2 5s;
+    left: 50%;
 }
 input {
     width: 375px;
@@ -117,7 +166,9 @@ input {
     width: 80px;
     height: 25px;
     margin-left: 50px;
+    animation: op 5s;
 }
+
 @-webkit-keyframes fade {
     from {
         opacity: .4
@@ -127,9 +178,7 @@ input {
         opacity: 1
     }
 }
-.combnt {
-    
-}
+
 @keyframes fade {
     from {
         opacity: .4
@@ -148,6 +197,30 @@ input {
 
     100% {
         transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes op2 {
+    0% {
+        transform: translateX(-500px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes opy {
+    0% {
+        transform: translateY(500px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
         opacity: 1;
     }
 }
