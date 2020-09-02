@@ -34,16 +34,13 @@ p {
 }
 
 .popout {
-
     font-family: Futura, sans-serif;
     font-weight: 900;
     font-size: 80px;
     padding: 80px;
-
     position: relative;
     display: inline-block;
-    
-	
+    animation: neon 5s infinite, op2 5;
 }
 
 .timer {
