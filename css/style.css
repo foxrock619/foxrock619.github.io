@@ -12,17 +12,19 @@
 }
 body {
     color: floralwhite;
-    background-image: url("../image/bg11.jpg");
-    
+    background-image: url("../image/bg10.jpg");
+    font-family: Apple LiGothic Medium;
     background-size: cover;
     background-position: center;
-    background-blend-mode:overlay;
-    min-height:100hv;
-
+    background-blend-mode: overlay;
+    min-height: 100hv;
 }
 .head {
+    color: transparent;
+    font-size: 20px;
+    text-shadow: 0 0 3px pink;
     margin-left: 50px;
-    font-family: Microsoft YaHei;
+    font-family: Apple LiGothic Medium;
 }
 p {
     font-size: 25px;
@@ -37,7 +39,7 @@ p {
 .popout {
     font-family: Futura, sans-serif;
     font-weight: 900;
-    font-size: 80px;
+    font-size: 65px;
     padding: 80px;
     position: relative;
     display: inline-block;
@@ -45,7 +47,7 @@ p {
 }
 
 .timer {
-    font-size: 65px;
+    font-size: 55px;
     text-transform: uppercase;
     margin-top: 100px;
     font-weight: normal;
@@ -134,7 +136,19 @@ input {
     margin-left: 50px;
     animation: op 5s;
 }
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
 
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
 @-webkit-keyframes fade {
     from {
         opacity: .4
