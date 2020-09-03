@@ -12,7 +12,7 @@
 }
 body {
     color: floralwhite;
-    background-image: url("../image/bg10.jpg");
+    background-image: url("../image/bg4.jpg");
     font-family: Apple LiGothic Medium;
     background-size: cover;
     background-position: center;
@@ -43,10 +43,11 @@ p {
     padding: 80px;
     position: relative;
     display: inline-block;
-    animation: neon 5s infinite, op2 5;
+    animation: neon 5s infinite, fliker 5s;
 }
 
 .timer {
+    font-family: Futura, sans-serif;
     font-size: 55px;
     text-transform: uppercase;
     margin-top: 100px;
@@ -56,7 +57,6 @@ p {
     text-align: center;
     color: white;
     animation: neon 2s infinite, op 5s;
-   
 }
 @keyframes neon {
     0% {
@@ -108,18 +108,18 @@ p {
     animation: op 5s;
 }
 .mbnt {
-    
-    border-radius: 4px;
-    background-color: palevioletred;
+    font-family: Futura, sans-serif;
+    border-radius: 30px;
+    background-color: lightpink;
     border: none;
-    color: lightpink;
+    color: white;
     text-align: center;
     font-size: 28px;
     padding: 20px;
     width: 200px;
     cursor: pointer;
     position: absolute;
-    animation: op2 5s;
+    animation: op2 5s, glowing 5s infinite,neon 2s infinite;
     left: 50%;
 }
 input {
@@ -168,7 +168,52 @@ input {
         opacity: 1
     }
 }
+@keyframes fliker {
+    0% {
+        
+        opacity: 0;
+    }
 
+    10% {
+        opacity: 0.3;
+    }
+
+    20% {
+        opacity: 0.6;
+    }
+
+    30% {
+        opacity: 0.7;
+    }
+
+    40% {
+        opacity: 0.4;
+    }
+
+    50% {
+        opacity: 0.6;
+    }
+
+    60% {
+        opacity: 0.8;
+    }
+
+    70% {
+        opacity: 0.3;
+    }
+
+    80% {
+        opacity: 0.6;
+    }
+
+    90% {
+        opacity: 0.8;
+    }
+    100% {
+        
+        opacity: 1;
+    }
+}
 @keyframes op {
     0% {
         transform: translateX(500px);
@@ -204,3 +249,21 @@ input {
         opacity: 1;
     }
 }
+
+@keyframes glowing {
+    0% {
+        background-color: lightpink;
+        box-shadow: 0 0 3px lightpink;
+    }
+
+    50% {
+        background-color: hotpink;
+        box-shadow: 0 0 50px hotpink;
+    }
+
+    100% {
+        background-color: lightpink;
+        box-shadow: 0 0 3px lightpink;
+    }
+}
+
