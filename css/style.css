@@ -270,12 +270,12 @@ input {
 }
 
 .circles {
-    
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-   
+    overflow: hidden;
 }
 
     .circles li {
@@ -372,7 +372,7 @@ input {
     0% {
         transform: translateY(0) rotate(0deg);
         opacity: 0.8;
-        border-radius: 0;
+        border-radius: 20%;
     }
 
     100% {
