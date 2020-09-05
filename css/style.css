@@ -18,6 +18,7 @@ body {
     background-position: center;
     background-blend-mode: overlay;
     min-height: 100hv;
+   
 }
 .head {
     color: transparent;
@@ -43,6 +44,7 @@ p {
     padding: 80px;
     position: relative;
     display: inline-block;
+    
     animation: neon 5s infinite, fliker 5s;
 }
 
@@ -170,6 +172,54 @@ input {
         opacity: 1
     }
 }
+
+@keyframes fadereverse {
+    0% {
+        opacity: 0.2;
+    }
+
+    10% {
+        opacity: 0.3;
+    }
+
+    20% {
+        opacity: 0.4;
+    }
+
+    30% {
+        opacity: 0.6;
+    }
+
+    40% {
+        opacity: 0.8;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 0.8;
+    }
+
+    70% {
+        opacity: 0.7;
+    }
+
+    80% {
+        opacity: 0.6;
+    }
+
+    90% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 0.4;
+    }
+}
+
+
 @keyframes fliker {
     0% {
         
@@ -228,6 +278,17 @@ input {
     }
 }
 
+@keyframes mover {
+    0% {
+        transform: translateX(500px);
+        
+    }
+
+    100% {
+        transform: translateX(0px);
+        
+    }
+}
 @keyframes op2 {
     0% {
         transform: translateX(-500px);
@@ -268,7 +329,65 @@ input {
         box-shadow: 0 0 3px lightpink;
     }
 }
+.apology {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    text-align: center;
+    display: inline;
+    font-size: 55px;
+    animation: neon 2s infinite,fadereverse 5s,mover 2s;
+}
 
+.apology2 {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    text-align: center;
+    font-size: 55px;
+    display: none;
+    animation: neon 2s infinite,fadereverse 5s,mover 2s;
+}
+
+.apology3 {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    text-align: center;
+    font-size: 55px;
+    display: none;
+    animation: neon 2s infinite,fadereverse 5s,mover 2s;
+}
+
+.apology4 {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    text-align: center;
+    font-size: 55px;
+    display: none;
+    animation: neon 2s infinite,fadereverse 5s,mover 2s;
+}
+
+.apology5 {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    text-align: center;
+    font-size: 55px;
+    display: none;
+    animation: neon 2s infinite,fadereverse 5s,mover 2s;
+}
+
+.apology6 {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    text-align: center;
+    font-size: 55px;
+    display: none;
+    animation: neon 2s infinite,fadereverse 5s,mover 2s;
+}
 .circles {
     position: absolute;
     top: 0;

@@ -17,7 +17,7 @@
 
 
 
-    <p class="popout">
+    <p class="popout" id="pop">
         <span>L</span>
         <span>O</span>
         <span>V</span>
@@ -31,22 +31,66 @@
         <span>R</span>
 
     </p>
-    <div class="head">
+
+    <div class="head" id="head">
 
         <dd>
             <b> 让这个网站记录咱们的爱情和咱们感情一起成长</b>
         </dd>
     </div>
+
+    <div class="apology" id="ap">
+
+        <dd>
+            宝贝，宝贝。
+        </dd>
+    </div>
+
+    <div class="apology2" id="ap2">
+
+        <dd>
+            我错了
+        </dd>
+    </div>
+
+    <div class="apology3" id="ap3">
+
+        <dd>
+            我们不吵隔夜架好吗宝贝。
+        </dd>
+    </div>
+
+    <div class="apology4" id="ap4">
+
+        <dd>
+            宝贝你知道我不想让你受一点伤害的。
+        </dd>
+    </div>
+
+    <div class="apology5" id="ap5">
+
+        <dd>
+            宝贝看看我的心吧。
+        </dd>
+    </div>
+
+    <div class="apology6" id="ap6">
+
+        <dd>
+            我爱你宝贝，让时间证明。
+        </dd>
+    </div>
     <div class="timer" id="demo"></div>
     <br><br><br>
-
-    <img class="mySlides fade" src="image/his1.jpg">
-    <img class="mySlides fade" src="image/his2.jpg">
-    <img class="mySlides fade" src="image/his3.jpg">
+    <div class="img" id="show">
+        <img class="mySlides fade" src="image/his1.jpg">
+        <img class="mySlides fade" src="image/his2.jpg">
+        <img class="mySlides fade" src="image/his3.jpg">
+    </div>
     <br>
     <audio id="music" src="music2.mp3" loop></audio>
     <br>
-    <button class="mbnt" onclick="document.getElementById('music').play()">Play</button>
+    <button class="mbnt" id="mbnt" onclick="document.getElementById('music').play()">Play</button>
 
     <br>
     <script>
@@ -74,10 +118,83 @@
 
 
         }, 1000);
+
+
+        var ap = document.getElementById('ap');
+
+        setTimeout(function () {
+            ap.style.display = 'none';
+        }, 5000);
+
+        var ap2 = document.getElementById('ap2');
+
+        setTimeout(function () {
+            ap2.style.display = 'inline';
+        }, 5000);
+        setTimeout(function () {
+            ap2.style.display = 'none';
+        }, 10000);
+
+        var ap3 = document.getElementById('ap3');
+
+        setTimeout(function () {
+            ap3.style.display = 'inline';
+        }, 10000);
+        setTimeout(function () {
+            ap3.style.display = 'none';
+        }, 15000);
+
+        var ap4 = document.getElementById('ap4');
+
+        setTimeout(function () {
+            ap4.style.display = 'inline';
+        }, 15000);
+        setTimeout(function () {
+            ap4.style.display = 'none';
+        }, 20000);
+
+        var ap5 = document.getElementById('ap5');
+
+        setTimeout(function () {
+            ap5.style.display = 'inline';
+        }, 20000);
+        setTimeout(function () {
+            ap5.style.display = 'none';
+        }, 25000);
+
+        var ap6 = document.getElementById('ap6');
+
+        setTimeout(function () {
+            ap6.style.display = 'inline';
+        }, 25000);
+        setTimeout(function () {
+            ap6.style.display = 'none';
+        }, 30000);
     </script>
 
 
-    <div class="c1">
+
+    <div class="c1" id="c1">
+
+        <br>
+        <br><br>
+        <br><br>
+        <dd>
+            今天是9/5/2020，今天加入了认错道歉系统，今天又惹宝贝不开心了，我真的不想让你受一点伤害啊宝贝。我错了😥<br>
+
+        </dd>
+        <br><br>
+            <b>
+                <dd></dd>
+                <br>
+                <dd>Everything I do, I do it for you.</dd>
+                <br>
+                <dd>我做的所有事都是为你而做</dd>
+                <br>
+                <dd>― Bryan Adams</dd>
+                <br>
+
+            </b>
         <br>
         <br><br>
         <br><br>
@@ -89,11 +206,11 @@
         <b>
             <dd>“I swear I couldn't love you more than I do right now, and yet I know I will tomorrow.”</dd>
             <br>
-            <dd>“我发誓我没法比现在还要更爱你，但是我知道我明天会更爱你。”</dd>
+            <dd>“我发誓我没法比现在还要更爱你，但是我知道我明天还会更爱你。”</dd>
             <br>
             <dd>― Leo Christopher</dd>
             <br>
-            
+
         </b>
 
         <br>
@@ -259,16 +376,17 @@
         <button class="combnt" onclick="">留言</button>
     </form>
 
-    <dd>..</dd>
-    <dt>我爱你宝贝</dt>
-    <dd>这个网站还只是个雏形，我对于写网页完全是个新手，还有很多要学，很多地方要增加功能和完善。</dd>
-    <dd>它也代表了我对你的爱，虽然炽烈但是还有很多不足。我在完善这个网站的同时也会完善我对你的爱。</dd>
-    <dd>人生一路至此，遇到你是我最大的惊喜。</dd>
-    <dd>每天对你说永远不只是说说而已，我对咱们的爱抱有永恒的执着。</dd>
-    <dd>今天也好想你，但是克制住了认真的一直在写网页。</dd>
-    <dd>宝贝我对生活充满劲头，也能为你遮风避雨，今天是向你证明的我的承诺的开始</dd>
-    <dd>我之前的承诺也不会一遍一遍的提了，让我用行动证明</dd>
-
+    <div class="c2" id="c2">
+        <dd>..</dd>
+        <dt>我爱你宝贝</dt>
+        <dd>这个网站还只是个雏形，我对于写网页完全是个新手，还有很多要学，很多地方要增加功能和完善。</dd>
+        <dd>它也代表了我对你的爱，虽然炽烈但是还有很多不足。我在完善这个网站的同时也会完善我对你的爱。</dd>
+        <dd>人生一路至此，遇到你是我最大的惊喜。</dd>
+        <dd>每天对你说永远不只是说说而已，我对咱们的爱抱有永恒的执着。</dd>
+        <dd>今天也好想你，但是克制住了认真的一直在写网页。</dd>
+        <dd>宝贝我对生活充满劲头，也能为你遮风避雨，今天是向你证明的我的承诺的开始</dd>
+        <dd>我之前的承诺也不会一遍一遍的提了，让我用行动证明</dd>
+    </div>
 
     <ul class="circles">
         <li></li>
