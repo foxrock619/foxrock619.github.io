@@ -331,7 +331,7 @@ input {
 }
 .apology {
     position: absolute;
-    top: 200px;
+    top: 100px;
     left: 50%;
     text-align: center;
     display: inline;
@@ -341,7 +341,7 @@ input {
 
 .apology2 {
     position: absolute;
-    top: 200px;
+    top: 100px;
     left: 50%;
     text-align: center;
     font-size: 55px;
@@ -351,7 +351,7 @@ input {
 
 .apology3 {
     position: absolute;
-    top: 200px;
+    top: 100px;
     left: 50%;
     text-align: center;
     font-size: 55px;
@@ -361,7 +361,7 @@ input {
 
 .apology4 {
     position: absolute;
-    top: 200px;
+    top: 100px;
     left: 50%;
     text-align: center;
     font-size: 55px;
@@ -371,7 +371,7 @@ input {
 
 .apology5 {
     position: absolute;
-    top: 200px;
+    top: 100px;
     left: 50%;
     text-align: center;
     font-size: 55px;
@@ -381,7 +381,7 @@ input {
 
 .apology6 {
     position: absolute;
-    top: 200px;
+    top: 100px;
     left: 50%;
     text-align: center;
     font-size: 55px;
