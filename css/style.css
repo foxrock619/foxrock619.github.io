@@ -280,7 +280,7 @@ input {
 
 @keyframes mover {
     0% {
-        transform: translateX(500px);
+        transform: translateX(-500px);
         
     }
 
