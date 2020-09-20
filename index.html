@@ -1,12 +1,17 @@
-﻿<!DOCTYPE html>
+﻿<?php
+    date_default_timezone_set('Asia/Shanghai');
+    include 'comments.inc.php';
+?>
+
+<!DOCTYPE html>
 <html>
 <head>
-    
 
-  
+
+
     <title>给小鹿的</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    
+
 </head>
 <body>
 
@@ -26,7 +31,7 @@
         <span>R</span>
 
     </p>
-    
+
     <div class="head" id="head">
 
         <dd>
@@ -58,21 +63,21 @@
     <div class="apology4" id="ap4">
 
         <dd>
-            
+
         </dd>
     </div>
 
     <div class="apology5" id="ap5">
 
         <dd>
-            
+
         </dd>
     </div>
 
     <div class="apology6" id="ap6">
 
         <dd>
-            
+
         </dd>
     </div>
     <div class="timer" id="demo"></div>
@@ -179,30 +184,30 @@
 
         </dd>
         <br><br>
-            <b>
-                <dd></dd>
-                <br>
-                <dd>我看到你就会微笑</dd>
-                <br>
-                <dd>语音时，虽然你看不到我</dd>
-                <br>
-                <dd>我也在微笑</dd>
-                <br>
-                <dd>你做饭洗脸时，听到你的声音</dd>
-                <br>
-                <dd>我也在微笑</dd>
-                <br>
-                <dd>你睡了，听到你微弱的转身声</dd>
-                <br>
-                <dd>我还会微笑</dd>
-                <br>
-                <dd>是一种拥有世界上最珍贵东西的微笑</dd>
-                <br>
-                <br>
-                <dd>--爱你的哥哥</dd>
-                <br>
+        <b>
+            <dd></dd>
+            <br>
+            <dd>我看到你就会微笑</dd>
+            <br>
+            <dd>语音时，虽然你看不到我</dd>
+            <br>
+            <dd>我也在微笑</dd>
+            <br>
+            <dd>你做饭洗脸时，听到你的声音</dd>
+            <br>
+            <dd>我也在微笑</dd>
+            <br>
+            <dd>你睡了，听到你微弱的转身声</dd>
+            <br>
+            <dd>我还会微笑</dd>
+            <br>
+            <dd>是一种拥有世界上最珍贵东西的微笑</dd>
+            <br>
+            <br>
+            <dd>--爱你的哥哥</dd>
+            <br>
 
-            </b>
+        </b>
         <br>
         <br><br>
         <br><br>
@@ -441,13 +446,14 @@
 
     </div>
     <br>
-    <form class="comment" action="../comment.php" method="get">
-        <label for="uid">昵称： </label>
-        <input type="text" name="uid" placeholder="输入昵称"><br><br>
-        <label for="com">留言： </label>
-        <input type="text" id="com" name="ucom"><br><br>
-        <button class="combnt" onclick="">留言</button>
-    </form>
+    echo "<form class='comment' method='POST' action = '".setComments()."'>
+    <label for="uid">昵称： </label>
+    <input type="text" name='uid' value='输入昵称'><br><br>
+    <input type='hidden' name='date' value='".date('Y-m-d H:i:s')"'>
+    <label for="com">留言： </label>
+    <input type="text" id="com" name="ucom"><br><br>
+    <button class="combnt" type='submit' name='commentSubmit' onclick="">留言</button>
+</form>"
 
     <div class="c2" id="c2">
         <dd>..</dd>
@@ -506,4 +512,4 @@
 
 
 </body>
-</html >
+</html>

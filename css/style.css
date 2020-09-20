@@ -106,10 +106,29 @@ p {
     animation-duration: 1.5s;
 }
 
-
+textarea{
+    width:400px;
+    height:100px;
+    margin-left: auto;
+    margin-right: auto;
+}
 .comment {
     text-align: center;
     animation: op 5s;
+    .subbut {
+    
+    border-radius: 30px;
+    background-color: blue;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    cursor: pointer;
+    animation: op2 5s, glowing 5s infinite;
+    left: 50%;
+}
 }
 .mbnt {
     font-family: Futura, sans-serif;
@@ -126,6 +145,8 @@ p {
     animation: op2 5s, glowing 5s infinite,neon 2s infinite;
     left: 50%;
 }
+
+
 input {
     width: 375px;
     height: 25px;
@@ -506,4 +527,15 @@ input {
         opacity: 0;
         border-radius: 50%;
     }
+}
+
+.comment-box {
+    width: 500px;
+    height: auto;
+    padding: 20px;
+    margin-bottom: 4px;
+    background-color: cornflowerblue;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
 }
